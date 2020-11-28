@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <style>
+    .header {
+      background-color: skyblue;
+      border: solid 1px;
+      padding: 4px 4px 4px;
+      margin: 4px 4px 4px;
+      width: auto;
+    }
+    .header h1{
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .child {
+      border: solid 1px;
+      font-size: normal;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 12vh;
+    }
+    .parent{
+      padding: 4px 4px 4px;
+      margin: 4px 4px 4px;
+      display: flex;
+      border-collapse: collapse;
+    }
+    #nav{
+      background-color: violet;
+      width: 25%;
+      text-align: center;
+      padding: 170px 0;
+    }
+    #content{
+      background-color: lightgreen;
+      width: 75%;
+      margin-left: 10px;
+      padding: 170px 0;
+      padding-left: 10px;
+    }
+    .footer{
+      border:solid 1px;
+      background-color: lightgray;
+      margin-top: 8px;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      padding: 4px 4px 4px;
+    }
+    .footer h1{
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class ="header">
+    <h1>Header Component</h1>
+  </div>
+  
+  <section class = "parent"> 
+    <div class ="child" id = "nav">
+      <h1>Nav Component</h1>
+    </div>
+
+    <div class ="child" id = "content">
+      <h1>Content Component</h1>
+    </div>
+  </section>
+  
+  <div class ="footer">
+    <h1>Footer Component</h1>
+  </div>
+</body>
+
+</html>
